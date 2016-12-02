@@ -32,8 +32,10 @@
 							<span style="width: 800px; height: 100%; float: left;"> <img
 								id="avatar" alt="avatar"
 								src="<?php echo avatarPath .$slide['avatar']; ?>">
-							<?php echo $slide['firstname'] ."&nbsp" .$slide['lastname']?>
+							<P style="font-size: 18px;"><?php echo $slide['firstname'] ."&nbsp" .$slide['lastname']?></P>
+							Miêu tả :
 							<br>
+							
 							<?php echo $slide['description']?>
 							</span>
 							<?php endforeach; ?>
