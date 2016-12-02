@@ -36,7 +36,7 @@ function paginator() {
 	echo '<a href="' . $_SERVER ['PHP_SELF'] . '?cur=' . $pages . '">' . "Cuối" . '</a>';
 }
 
-$records = getRecords ( 1, 1, ($curpage - 1) * $limit, $limit );
+$records = getRecords ( 1, 1, 0, 10000 );
 $slides = getRecords(2, 2, 0, 5);
 if (isset($_GET['what']) && isset($_GET['how'])){
 	if ($_GET['what'] == 1){
