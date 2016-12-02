@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Trang chủ</title>
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-</head>
 <body>
 	<div id="topmost"></div>
 	<div id="head">

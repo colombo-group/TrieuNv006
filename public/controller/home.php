@@ -37,7 +37,7 @@ function paginator() {
 }
 
 $records = getRecords ( 1, 1, ($curpage - 1) * $limit, $limit );
-
+$slides = getRecords(2, 2, 0, 5);
 if (isset($_GET['what']) && isset($_GET['how'])){
 	if ($_GET['what'] == 1){
 		if ($_GET['how'] == 1) $records = getRecords ( 1, 1, ($curpage - 1) * $limit, $limit );
@@ -48,5 +48,5 @@ if (isset($_GET['what']) && isset($_GET['how'])){
 	}
 }
 
-include '../view/home.php';
+include '../view/newHome.php';
 ?>

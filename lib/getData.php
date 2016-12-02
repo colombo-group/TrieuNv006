@@ -19,20 +19,7 @@ function getInfo($user) {
 }
 function getInfoById($id) {
 	$row = mysql_fetch_array ( mysql_query ( "SELECT * FROM `users` WHERE id = '$id'" ) );
-/* 	if ($row ['role'] == 1) {
-		$row ['role'] = "Member";
-	} else if ($row ['role'] == 2) {
-		$row ['role'] = "Admod";
-	} else if ($row ['role'] == 3) {
-		$row ['role'] = "Admin";
-	} */
-/* 	if ($row ['sex'] == 1) {
-		$row ['sex'] = "Nam";
-	} else if ($row ['sex'] == 2) {
-		$row ['sex'] = "Nu";
-	} else {
-		$row ['sex'] = "Khac";
-	} */
+
 	return $row;
 }
 function getPre($user) { // nhung nguoi dc gioi thieu boi $user
@@ -58,6 +45,7 @@ function getRecords($what = 1, $how = 1, $start = 0, $end = 5) { // what = 1/2 s
 	}
 	return $data;
 }
+
 function coutUser() {
 	$sql = "SELECT * FROM users";
 	$query = mysql_query ( $sql );
